@@ -1,4 +1,8 @@
-# Sopra Steria intervju-kode
+# Kodeoppgave - Kalkulator
+
+Før du starter med oppgaven:
+1. Installer avhengigheter `npm run install`
+2. Kjør applikasjon med `npm run dev`
 
 Start med å velg hva du skal kode med:
 
