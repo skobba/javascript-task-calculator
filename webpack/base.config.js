@@ -36,6 +36,11 @@ module.exports = {
       template: './src/index.html',
       filename: 'index.html',
       favicon: './src/soprasteria.ico'
-    })
+    }),
+    new HtmlWebpackPlugin({
+      entry: 'main',
+      template: './src/app.css',
+      filename: 'app.css',
+    }),
   ]
 };
