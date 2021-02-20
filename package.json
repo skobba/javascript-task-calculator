@@ -7,6 +7,8 @@
     "start": "webpack serve --config webpack/dev.config.js",
     "build": "webpack --config webpack/prod.config.js",
     "stats": "webpack --config webpack/stats.config.js",
+    "lint": "node_modules/.bin/eslint --ext js src",
+    "lint:fix": "node_modules/.bin/eslint --ext js src --fix",
     "ncu": "ncu",
     "ncu:update": "ncu -u"
   },
