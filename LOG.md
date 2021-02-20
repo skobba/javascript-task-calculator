@@ -168,3 +168,28 @@ All dependencies match the latest package versions :)
 # Setup Linter
 npm i -D eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier prettier
 
+# Selecting Redux and remove the 2 other
+Basicly selecting the redux way for a solution.
+
+# Eslint auto-fix
+Trying to fix as much a possible with eslint --fix
+
+Left with:
+```
+/Users/gjermundskobba/github_skobba/javascript-task-calculator/src/App.js
+  3:28  error  Unexpected use of file extension "jsx" for "./view/reduxComponent.jsx"  import/extensions
+  6:16  error  Component should be written as a pure function                          react/prefer-stateless-function
+
+/Users/gjermundskobba/github_skobba/javascript-task-calculator/src/index.js
+  5:26  error  'document' is not defined  no-undef
+
+/Users/gjermundskobba/github_skobba/javascript-task-calculator/src/redux/configureStore.js
+   8:5   error  Unexpected dangling '_' in '__REDUX_DEVTOOLS_EXTENSION__'  no-underscore-dangle
+   8:5   error  'window' is not defined                                    no-undef
+   9:9   error  Unexpected dangling '_' in '__REDUX_DEVTOOLS_EXTENSION__'  no-underscore-dangle
+   9:9   error  'window' is not defined                                    no-undef
+  10:11  error  Unexpected dangling '_' in '__REDUX_DEVTOOLS_EXTENSION__'  no-underscore-dangle
+  10:11  error  'window' is not defined                                    no-undef
+
+✖ 9 problems (9 errors, 0 warnings)
+```
