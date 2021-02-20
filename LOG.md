@@ -104,6 +104,12 @@ npm i --legacy-peer-deps
 
 I´m in a state where "npm i" requires the "package-lock-json" to run!!
 
-# Remove Unused Backed code and restructure folders
+### Remove Unused Backed code and restructure folders
 Just some restructure to prefered layout.
+
+# Remove unused packages
+```
+npm remove express prop-types immutability-helper babel-polyfill
+npm remove file-loader css-loader style-loader url-loader
+```
 
