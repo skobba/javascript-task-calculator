@@ -113,3 +113,58 @@ npm remove express prop-types immutability-helper babel-polyfill
 npm remove file-loader css-loader style-loader url-loader
 ```
 
+## depcheck
+Looks fine except webpack-merge, looks like its marked as "dependencies" and not "devDependencies".
+```
+Unused devDependencies
+* babel-loader
+* webpack-cli
+* webpack-dev-server
+Missing dependencies
+* webpack-merge: ./webpack/dev.config.js
+```
+
+## npm i
+```
+npm i
+```
+
+Result:
+```
+6 vulnerabilities (4 low, 2 high)
+```
+
+##  npm-check-updates
+Adding new script:
+```
+  "ncu": "ncu",
+  "ncu:update": "ncu -u"
+```
+
+Result:
+```
+ lodash                                   4.17.11  →   4.17.20     
+ react                                    16.13.1  →    17.0.1     
+ react-dom                                16.13.1  →    17.0.1     
+ react-redux                                7.1.0  →     7.2.2     
+ redux                                     ^4.0.1  →    ^4.0.5     
+ @babel/core                               ^7.0.0  →  ^7.12.17     
+ @babel/plugin-proposal-class-properties   ^7.0.0  →  ^7.12.13     
+ @babel/preset-env                         ^7.0.0  →  ^7.12.17     
+ @babel/preset-react                       ^7.0.0  →  ^7.12.13     
+ babel-loader                              ^8.0.0  →    ^8.2.2 
+```
+
+Running:
+```
+npm run ncu:update
+```
+
+Result:
+```
+All dependencies match the latest package versions :)
+```
+
+# Setup Linter
+npm i -D eslint-config-airbnb eslint-config-prettier eslint-plugin-prettier prettier
+
