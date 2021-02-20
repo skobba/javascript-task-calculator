@@ -1,17 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import { Provider } from 'react-redux';
-import ReduxComponent from './view/reduxComponent.jsx';
+import ReduxComponent from './view/reduxComponent';
 import store from './redux/store';
 
-export default class App extends Component {
-  render() {
-    return (
-      <>
-        <h2>Sopra Steria Kalkulator!</h2>
-        <Provider store={store}>
-          <ReduxComponent />
-        </Provider>
-      </>
-    );
-  }
-}
+const App = () => (
+  <>
+    <h2>Sopra Steria Kalkulator!</h2>
+    <Provider store={store}>
+      <ReduxComponent />
+    </Provider>
+  </>
+);
+export default App;
