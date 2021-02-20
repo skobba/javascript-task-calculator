@@ -1,0 +1,10 @@
+version: "3"
+
+services:
+  frontend:
+    build: ../demo-react
+    image: steria/demo:latest
+    ports:
+      - 8200:8100
+    environment:
+      - BACKEND=http://localhost:3000

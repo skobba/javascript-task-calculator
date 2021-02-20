@@ -193,3 +193,6 @@ Left with:
 
 ✖ 9 problems (9 errors, 0 warnings)
 ```
+
+# Setup docker
+See DOCKER.md
