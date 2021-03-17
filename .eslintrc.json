@@ -2,6 +2,7 @@
     "env": {
         "browser": true
     },
+    "ignorePatterns": ["/webpack/**"],
     "extends": [
       "airbnb",
       "prettier",
