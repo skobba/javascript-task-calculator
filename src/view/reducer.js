@@ -4,6 +4,7 @@ const _ = require('lodash');
 
 const initialState = {
   welcomeText: 'Velkommen til denne siden',
+  inputText: 'Standard input tekst',
 };
 
 const componentreducer = (prevState = initialState, action) => {
@@ -15,6 +16,9 @@ const componentreducer = (prevState = initialState, action) => {
       if (action.data) {
         newState.welcomeText = action.data;
       }
+      return newState;
+    case actions.INPUT_CHANGED:
+      newState = { ...prevState, inputText: action.data };
       return newState;
     default:
       return initialState;
