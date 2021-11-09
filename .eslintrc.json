@@ -5,8 +5,7 @@
     "ignorePatterns": ["/webpack/**"],
     "extends": [
       "airbnb",
-      "prettier",
-      "prettier/react"
+      "prettier"
     ],
     "plugins": [
       "prettier"
